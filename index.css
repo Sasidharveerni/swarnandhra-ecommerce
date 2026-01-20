@@ -12,11 +12,13 @@
 }
 
 .product-container {
-    display: flex;
-     justify-content: space-evenly;
+    /* display: flex;
+     justify-content: space-evenly; */
      /* space-evenly; it gives the even space to the all the child items */
       /* space-around;   it gives the equal space on both left and right sides */     
       /* space-between;  it gives the inside space for the child items */
 
     /* align-items: center; */
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
 }
