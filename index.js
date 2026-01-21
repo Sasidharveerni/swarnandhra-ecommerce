@@ -123,3 +123,36 @@ sendReminder(text)
 // 3. perform all arithmetic operations on 2 numbers
 // 4. print the type of the input value
 // 5. Sorting in Javascript - Bubble sort
+
+// Document Object Model
+
+// Javascripts considers entire html page as a one document.
+
+// Each document contains multiple elements or tags. we can manipulate the tags
+// by using DOM
+
+//
+
+// How to manipulate ?
+
+//document.getElementById('apple').style.backgroundColor = 'red'
+
+// Methods available 
+
+// getElementById, getElementsByClassName, getElementByTagName, getElementByQuerySelector
+
+// EVENTS
+
+// MouseEvents, FormEvents, KeyboardEvents, Window based Events
+
+
+// document.getElementById('changeColor').addEventListener('click', () => {
+//     document.getElementById('apple').style.backgroundColor = 'red'
+// })
+
+// document.getElementById('idName').addEventListener('eventname', () => {
+    // --------- your logic -------- })
+
+    const changeColor = () => {
+         document.getElementById('apple').style.backgroundColor = 'red'
+    }
