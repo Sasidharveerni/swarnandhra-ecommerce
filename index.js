@@ -156,3 +156,52 @@ sendReminder(text)
     const changeColor = () => {
          document.getElementById('apple').style.backgroundColor = 'red'
     }
+
+
+const userName = document.getElementById('user')
+
+userName.addEventListener('input', (e) => {
+    console.log(e.target.value)
+})
+
+
+document.getElementById('email').addEventListener('input', (e) => {
+    console.log(e.target.value)
+})
+
+const formData = document.getElementById('myForm')
+
+formData.addEventListener('submit', (e) => {
+    e.preventDefault(); 
+    const data = new FormData(formData)
+
+  //  console.log(data)
+
+  // List<Integer, Integer> arr = new ArrayList<>();
+
+ //
+ const data2 = new FormData()
+
+    console.log(Object.fromEntries(data))
+})
+
+// object - represented by key-value pairs
+
+const object = {
+    username: '',
+    email: '',
+    password: '',
+    greet: function greet() {
+        return "Hello"
+    }
+}
+
+console.log(object)
+
+object.email = 'swarnandhra@gmail.com'
+
+console.log(object.greet())
+
+// JSON - Javascript Object Notation
+
+// JSON can be used to paas the data from the backend to frontend and vice-versa
